@@ -145,7 +145,7 @@ const getKeysFromTableHead = async (page) => {
    }
 }
 
-// to prevent lazy loading elements
+// to prevent lazy loading elements (actually it was a headache to find a proper solution)
 const scrollDown = async (page) => {
    await page.evaluate(async () => {
       await new Promise((resolve) => {
